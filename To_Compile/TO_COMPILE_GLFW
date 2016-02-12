@@ -1,0 +1,2 @@
+#compilation GLFW
+	g++ -Wno-deprecated-declarations -shared -fPIC -o $(LIBGLFW) $(SRC_GLFW) /System/Library/Frameworks/GLUT.framework/GLUT -I ~/glfw-3.1.1/include -I /System/Library/Frameworks/GLUT.framework/Headers -L ~/glfw-3.1.1/build/src -lglfw -framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo

@@ -1,0 +1,2 @@
+g++ -c test.cpp -I ~/Library/Frameworks/SDL/Headers/
+g++ test.o ~/Library/Frameworks/SDL2.framework/SDL2

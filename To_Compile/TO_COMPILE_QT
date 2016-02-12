@@ -1,0 +1,10 @@
+qmake -project
+qmake file.pro
+make
+./ ~/~/~/file
+
+SRC_QT = Player_QT.cpp SnakeWindow.cpp openglwindow.cpp moc_openglwindow.cpp
+
+OBJ_QT = $(SRC_QT:.cpp=.o)
+
+g++ -shared -fPIC -o $(LIBQT) $(SRC_QT) -headerpad_max_install_names -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk -mmacosx-version-min=10.7 -Wl,-rpath,/nfs/sgoinfre/goinfre/Apps/Qt5.4/5.4/clang_64/lib -F/nfs/sgoinfre/goinfre/Apps/Qt5.4/5.4/clang_64/lib -framework QtGui -framework QtCore -framework DiskArbitration -framework IOKit -framework OpenGL -framework AGL
